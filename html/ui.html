@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FFA</title>
+<style id="applicationStylesheet" type="text/css">
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+	font-family: Signika;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-size: 12px;
+  font-family: 'Rajdhani', sans-serif;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		user-select: ;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#FFA {
+		position: absolute;
+		width: 566px;
+		height: 65px;
+		left: 677px;
+		top: 981px;
+		overflow: visible;
+	}
+	#ESXV_2 {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+	}
+	.ESXV_2 {
+		position: absolute;
+		overflow: visible;
+		width: 566px;
+		height: 65px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_6 {
+		position: absolute;
+		width: 517px;
+		height: 50px;
+		left: 25px;
+		top: 8px;
+		overflow: visible;
+	}
+	#Gruppe_5 {
+		position: absolute;
+		width: 159px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ESXV_2_k {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_k {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#ESXV_2_l {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_l {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 50px;
+		left: 58px;
+		top: 0px;
+	}
+	.anzahl-getötet {
+		left: 83px;
+		top: 20px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 66.6666488647461px;
+		margin-top: -22.916659355163574px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20.833330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#KILLS {
+		left: 92.873px;
+		top: 8.769px;
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 14.00391960144043px;
+		margin-top: -2.210294723510742px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9.583330154418945px;
+		color: rgba(163,163,163,1);
+	}
+	#crosshairs-solid {
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		left: 12px;
+		top: 12px;
+		overflow: visible;
+	}
+	#Gruppe_5_p {
+		position: absolute;
+		width: 159px;
+		height: 50px;
+		left: 179px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ESXV_2_q {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_q {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#ESXV_2_r {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_r {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 50px;
+		left: 58px;
+		top: 0px;
+	}
+	.anzahl-gestorben {
+		left: 84px;
+		top: 20px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 66.6666488647461px;
+		margin-top: -22.916659355163574px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20.833330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#DEATHS {
+		left: 85.873px;
+		top: 8.769px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 14.00391960144043px;
+		margin-top: -2.210294723510742px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9.583330154418945px;
+		color: rgba(163,163,163,1);
+	}
+	#skull-crossbones-solid_1 {
+		position: absolute;
+		width: 21px;
+		height: 24px;
+		left: 14px;
+		top: 12px;
+		overflow: visible;
+	}
+	#Gruppe_5_v {
+		position: absolute;
+		width: 159px;
+		height: 50px;
+		left: 358px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ESXV_2_w {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_w {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#ESXV_2_x {
+		opacity: 0.6;
+		fill: rgba(19,19,19,1);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 1.25px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.ESXV_2_x {
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		height: 50px;
+		left: 58px;
+		top: 0px;
+	}
+	.anzahl-killstreak {
+		left: 84px;
+		top: 20px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 66.6666488647461px;
+		margin-top: -22.916659355163574px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20.833330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#STREAK {
+		left: 86.873px;
+		top: 8.769px;
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		white-space: nowrap;
+		line-height: 14.00391960144043px;
+		margin-top: -2.210294723510742px;
+		text-align: center;
+		font-family:Signika;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9.583330154418945px;
+		color: rgba(163,163,163,1);
+	}
+	#bomb-solid {
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		left: 12px;
+		top: 11px;
+		overflow: visible;
+	}
+	.container{
+	position: relative;
+	width: 670px;
+	height: 75px;
+	position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-top: 8px solid white;
+	background: rgba(71, 71, 71, 0.7);
+	border-radius: 5px;
+	}
+	.kills{
+		position: absolute;
+width: 197px;
+height: 16px;
+left: 16px;
+top: 14px;
+
+font-family: Signika;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.tode{
+		position: absolute;
+width: 197px;
+height: 16px;
+left: 231px;
+top: 14px;
+
+font-family: Signika;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.kd{
+		position: absolute;
+width: 197px;
+height: 16px;
+left: 446px;
+top: 14px;
+
+font-family: Signika;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	*{
+		user-select: none;
+	}
+	.anzahl-getötet{
+		/* Frame 105 */
+
+
+
+width: 197px;
+height: 19px;
+left: 16px;
+top: 37px;
+background: #878787;
+opacity: 0.45;
+border-radius: 15px;
+	}
+	.anzahl-gestorben{
+	
+width: 197px;
+height: 19px;
+left: 231px;
+top: 37px;
+
+background: #878787;
+opacity: 0.45;
+border-radius: 15px;
+	}
+	.anzahl-killstreak{
+		position: absolute;
+width: 197px;
+height: 19px;
+left: 446px;
+top: 37px;
+
+background: #878787;
+opacity: 0.45;
+border-radius: 15px;
+	}
+
+	span{
+	font-family: Signika;
+	font-size: 21px;
+}
+body {
+  font-size: 16px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+
+/*//////////////////////////////////////////////////////*/
+
+a {
+  text-decoration: none;
+}
+
+.container1 {
+	margin-right: 25px;
+  	text-align: right;
+}
+
+.killFeed {
+  margin-top: 15px;
+  min-width: 100px;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  border: 2px white solid;
+  border-radius: 6px;
+  padding: 0 10px;
+  transform: scale(1);
+  transition: .1s;
+}
+
+.killFeed:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(111, 0, 0, 0.5);
+}
+
+.killer {
+  color: #ECCE51;
+  line-height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  float: left;
+}
+
+.weapon {
+  float: left;
+}
+
+.weapon.ak47 {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background: url(http://i.imgur.com/fZlAs4p.png) no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.weapon.usp {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background: url(http://i.imgur.com/dT1EGjU.png) no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+
+.weapon.awp {
+  margin-top: 8px;
+  height: 25px;
+  width: 80px;
+  background: url("http://i.imgur.com/i5Euh7o.png") no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.headshot.true {
+  margin: 8px 0px 0px 10px;
+  height: 22px;
+  width: 22px;
+  background-image: url(https://www.steamid.co.uk/images/headshot.png);
+  background-size: cover;
+  float: left;
+}
+
+.wallbang {
+  float: left;
+}
+
+.wallbang.true {
+  margin: 8px 0px 0px 10px;
+  height: 22px;
+  width: 22px;
+  background: url(http://i.imgur.com/FmmFb28.png);
+  background-size: cover;
+  float: left;
+}
+
+.headshot {
+  float: left;
+}
+
+.killed {
+  margin-left: 10px;
+  color: #71A6FF;
+  line-height: 40px;
+  display: inline-block;
+  float: left;
+}
+
+.killclass{
+	margin-top: 40px;
+}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Rajdhani:600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="ffa2" id="ffa2">
+		<div id="Canvas">
+			<div class="container">
+				<p style="font-family: Signika; font-size: 17px; margin-top: -35px;margin-left: 263px; color: white;"> FFA</p>
+				<div class="kills">KILLS</div>
+				<div class="tode">TODE</div>
+				<div class="kd">K/D</div>
+					<div class="anzahl-getötet">
+						<span>2312</span>
+					</div>
+					<div class="anzahl-gestorben">
+						<span>2312</span>
+					</div>
+					<div class="anzahl-killstreak">
+						<span>2312</span>
+					</div>
+				</div>
+			</div>
+			<div class="killclass">
+
+				<!-- <div class="container1">
+					<div class="killFeed">
+					<a href="" class="killer">bro you fukin suk</a>
+					<div class="headshot true"></div>
+					<a href="" class="killed">storM</a>
+					</div>
+				</div>
+
+
+				<div class="container1">
+					<div class="killFeed">
+					<a href="" class="killer">bro you fukin suk</a>
+					<div class="headshot true"></div>
+					<a href="" class="killed">storM</a>
+					</div>
+				</div>
+
+				<div class="container1">
+					<div class="killFeed">
+					<a href="" class="killer">bro you fukin suk</a>
+					<div class="headshot true"></div>
+					<a href="" class="killed">storM</a>
+					</div>
+				</div> -->
+
+			</div>
+	</body>
+</html>
